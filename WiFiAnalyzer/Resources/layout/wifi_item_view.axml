@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15px"
+    android:divider="?android:attr/dividerHorizontal"
+    
+    >
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+        <TextView
+            android:text="SSID:"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView
+            android:text="Your SSID name here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:paddingLeft="15px"
+            android:id="@+id/WifiItemTextView" />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Signal Strenght:"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView
+            android:paddingLeft="15px"
+            android:text="Text"
+            android:id="@+id/signalTextView" />
+    </GridLayout>
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1">
+
+        <TextView
+            android:text="Channel:"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView
+            android:paddingLeft="15px"
+            android:text="Text"
+            android:id="@+id/channelTextView" />
+        <TextView
+            android:paddingLeft="15px"
+            android:text="Frequency:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:text="Text"
+            android:id="@+id/frequencyTextView" />
+
+
+    </GridLayout>
+</LinearLayout>

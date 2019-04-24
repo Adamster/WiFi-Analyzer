@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:scrollbars="vertical"
+        android:id="@+id/WifiListRecyclerView" />
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:foregroundGravity="center"
+        android:id="@+id/emptyGrid">
+
+        <TextView
+            android:text="Please Check your WiFi connection. Networks not found."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NoItemsPlaceholder" />
+        <Button
+            android:layout_gravity="center"
+            android:text="Refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tryAgainBtn" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Scanning"/>
+        <ProgressBar
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progressBar" />
+
+
+    </GridLayout>
+
+
+
+
+</RelativeLayout>
