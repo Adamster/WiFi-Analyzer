@@ -1,14 +1,12 @@
-﻿using System;
-
-namespace WiFiAnalyzer.Core
+﻿namespace WiFiAnalyzer.Core.Models
 {
-    public class SSIDModel
+    public class SsidModel
     {
         public string Name { get; set; }
 
         public int Channel { get; set; }
 
         public int Frequency { get; set; }
-        public int SignalStrenght { get; set; }
+        public int SignalStrength { get; set; }
     }
 }
